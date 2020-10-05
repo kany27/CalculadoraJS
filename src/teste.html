@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculadora</title>
+        <link rel="stylesheet" href="/data/sistema/teste/teste.css">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <form action="/cgi-bin/teste" method="POST">
+            <div id="calculator">
+                <input type="text" name="display" id="display" value="0">
+                <input type="hidden" name="historico[]" id="calculo"/>
+                <!--Botões-->
+                <button type="button" onclick="limpar()">AC</button> <!--Limpa tudo-->
+                <button type="button" onclick="obterPorcento()">%</button> <!--Botão para obter porcentagem-->
+                <button type="button" onclick="iniciarCalculo('*')">X</button> <!--Botão para multiplicação-->
+                <button type="button" onclick="iniciarCalculo('/')">/</button> <!--Botão para divisão-->
+                <button type="button" onclick="incluirDigito('7')">7</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('8')">8</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('9')">9</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="finalizarCalculo()">=</button> <!--Botão para finalizar calculo-->
+                <button type="button" onclick="incluirDigito('4')">4</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('5')">5</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('6')">6</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="iniciarCalculo('-')">-</button> <!--Botão para subtração-->
+                <button type="button" onclick="incluirDigito('1')">1</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('2')">2</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirDigito('3')">3</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="iniciarCalculo('+')" class="mais">+</button> <!--Botão para adição-->
+                <button type="button" onclick="incluirDigito('0')" class="zero">0</button> <!--Botão para inserir um número-->
+                <button type="button" onclick="incluirPonto()">.</button> <!--Botão para inserir ponto-->
+                <input type="submit" name="grava" value="gravar" class="submit">
+            </div>
+        </form>
+        <script src="/data/sistema/teste/teste.js"></script>
+    </body>
+</html>
