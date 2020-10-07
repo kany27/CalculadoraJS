@@ -46,9 +46,9 @@ function calculo() {
     var nCalculado = eval(`${_n1} ${operacao} ${_n2}`);
     var historico = [];
     historico.push(n1 + " " + operacao + " " + n2 + " = " + nCalculado);
-    document.getElementById("#calculo").value = valor;
+    document.getElementById("calculo").value = historico;
     return nCalculado;
-    }   
+    }    
 
 
 var clicadoEmIgual = false;
